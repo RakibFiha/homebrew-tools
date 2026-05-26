@@ -7,11 +7,11 @@ class WrappedDocker < Formula
   if Hardware::CPU.arm?
     url "https://github.com/RakibFiha/wrapped-docker/releases/download/v#{version}/wrapped-docker-aarch64.tar.gz"
     # Run `shasum -a 256 wrapped-docker-aarch64.tar.gz` on your built asset and paste it here:
-    sha256 "sha256:8fb4aadb4d7a88d7f60f5584168807983fa59a5848fad6c47872a25b10af3e89"
+    sha256 "8fb4aadb4d7a88d7f60f5584168807983fa59a5848fad6c47872a25b10af3e89"
   else
     url "https://github.com/RakibFiha/wrapped-docker/releases/download/v#{version}/wrapped-docker-x86_64.tar.gz"
     # Run `shasum -a 256 wrapped-docker-x86_64.tar.gz` on your built asset and paste it here:
-    sha256 "sha256:c030f5127125638a46c4a406b47e37755fac2ae8c8a7466d005be3d6502062a4"
+    sha256 "c030f5127125638a46c4a406b47e37755fac2ae8c8a7466d005be3d6502062a4"
   end
 
   def install
