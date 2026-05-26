@@ -44,7 +44,11 @@ class WrappedDocker < Formula
       verify your terminal environment path order.
       
       If you DO NOT use a ~/.local/bin layout, manually append this line to your ~/.zshrc or ~/.bashrc:
-        export PATH="#{opt_libexec}:$PATH"
+        export PATH="#{opt_libexec}:$PATH" >> ~/.zshrc
+
+      Then, refresh your active terminal instance configuration:
+
+        source ~/.zshrc
     EOS
   end
 
