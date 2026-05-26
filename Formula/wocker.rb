@@ -14,7 +14,7 @@ class Wocker < Formula
 
   def install
     # Extracts the "wrapped-docker" binary from the tar file, but installs it as "wocker"
-    bin.install "wrapped-docker" => "wocker"
+    bin.install "docker" => "wocker"
   end
 
   def post_install
